@@ -96,7 +96,7 @@
       <h2>Kern</h2>
       <div class="card"><ul class="kern">${b.kern.map((k) => `<li>${esc(k)}</li>`).join("")}</ul></div>
       ${(b.fig || []).length ? `<h2>In beeld</h2>${b.fig.map((f) => `<div class="card figkaart">${FIG(f)}</div>`).join("")}` : ""}
-      ${b.voorbeeld ? `<h2>Rekenvoorbeeld</h2><div class="card"><p><b>${esc(b.voorbeeld.titel)}</b></p><ol class="stappen">${b.voorbeeld.stappen.map((r) => `<li>${esc(r)}</li>`).join("")}</ol></div>` : ""}
+      ${b.voorbeeld ? `<h2>Uitgewerkt voorbeeld</h2><div class="card"><p><b>${esc(b.voorbeeld.titel)}</b></p><ol class="stappen">${b.voorbeeld.stappen.map((r) => `<li>${esc(r)}</li>`).join("")}</ol></div>` : ""}
       <h2>Begrippen</h2>
       <div class="card"><dl class="begrippen">${b.begrippen.map(([term, def]) => `<dt>${esc(term)}</dt><dd>${esc(def)}</dd>`).join("")}</dl></div>
       <h2>Inzichtvraag</h2>

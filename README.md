@@ -14,8 +14,9 @@ met modelantwoord. Daarnaast een oefentoets van 20 vragen door alle paragrafen h
 je fouten te herhalen.
 
 De samenvattingen en vragen zijn zelf geschreven. De onderwerpen volgen de inhoudsopgave van de
-werkboeken Economie havo van Cumulus; de theorie zelf is er niet naast gelegd. Check bij twijfel
-altijd het boek en je aantekeningen.
+werkboeken Economie havo van Cumulus en de begrippen zijn gecontroleerd met de openbare
+begrippenlijst op cumulus.co/economie/begrippen. De theoriepagina's van het werkboek zijn er niet
+naast gelegd. Check bij twijfel altijd het boek en je aantekeningen.
 
 ## Gebruiken
 

@@ -10,7 +10,8 @@ THEMAS.push({
     {
       titel: "Marktvormen herkennen",
       kern: [
-        "Een marktvorm herken je met drie vragen: (1) hoeveel aanbieders zijn er: één, weinig of veel? (2) Is het product homogeen of heterogeen? (3) Kunnen nieuwe bedrijven makkelijk toetreden?",
+        "Een marktvorm beschrijf je met vijf kenmerken: het aantal aanbieders, hun marktmacht (marktaandeel), een homogeen of heterogeen product, de toetredingsdrempels en de transparantie van de markt.",
+        "Bij elke marktvorm gaan we uit van veel vragers: één vrager heeft geen invloed op de prijs.",
         "Er zijn vier marktvormen: volkomen concurrentie, monopolistische concurrentie, oligopolie en monopolie.",
         "Volkomen concurrentie is de enige marktvorm met volkomen concurrentie. De andere drie zijn vormen van onvolkomen concurrentie.",
         "Bij onvolkomen concurrentie heeft de aanbieder marktmacht: hij kan zelf zijn prijs bepalen (prijszetter). Hoe minder concurrenten, hoe groter die macht.",
@@ -43,14 +44,15 @@ THEMAS.push({
       titel: "Monopolie",
       kern: [
         "Bij een monopolie is er één aanbieder zonder directe concurrenten. Nieuwe bedrijven kunnen (bijna) niet toetreden.",
-        "Oorzaken van toetredingsdrempels: een octrooi (patent), een wettelijk alleenrecht, het bezit van een unieke grondstof, of zulke hoge vaste kosten dat één bedrijf de hele markt het goedkoopst bedient (natuurlijk monopolie, zoals een leidingnet).",
+        "Er zijn twee soorten. Overheidsmonopolie: door een wet of overheidsmaatregel is er maar één aanbieder (drinkwater, het spoor). Feitelijk monopolie: één bedrijf heeft de concurrenten uit de markt gewerkt met een technologische voorsprong of een octrooi (bijvoorbeeld een medicijn).",
         "De monopolist is prijszetter. Toch kan hij niet alles vragen: bij een hogere prijs kopen consumenten minder. De collectieve vraaglijn is zijn prijsafzetlijn (= GO-lijn).",
         "Wil hij meer verkopen, dan moet de prijs omlaag voor álle producten. Daardoor is de MO lager dan de prijs. De MO-lijn daalt twee keer zo steil als de prijsafzetlijn.",
         "Voorbeeld: p = −q + 100 geeft TO = −q² + 100q en MO = −2q + 100.",
         "Maximale winst: MO = MK. Reken daarmee de afzet uit en vul die in de prijsafzetlijn in voor de prijs. Lees de prijs dus nooit af op de MO-lijn.",
         "Maximale omzet: MO = 0.",
         "In de grafiek is de winst een rechthoek: (prijs − GTK) × afzet. De hoogte is de winst per product, de breedte de afzet.",
-        "Vergeleken met volkomen concurrentie: een hogere prijs en een kleinere hoeveelheid. Daarom houdt de overheid toezicht op monopolies of stelt ze een maximumprijs vast."
+        "Nadelen voor de consument: een hogere prijs, minder keuze en minder innovatie dan bij concurrentie. Voordeel: door de grote schaal kan een monopolist goedkoper produceren.",
+        "Daarom houdt de overheid toezicht op monopolies of stelt ze een maximumprijs vast."
       ],
       fig: ["mono", "mono_winst"],
       voorbeeld: {
@@ -67,12 +69,13 @@ THEMAS.push({
       begrippen: [
         ["Monopolie", "Marktvorm met één aanbieder en (bijna) onmogelijke toetreding."],
         ["Octrooi (patent)", "Wettelijk recht om een uitvinding een aantal jaren als enige te maken en te verkopen."],
-        ["Natuurlijk monopolie", "Monopolie dat ontstaat doordat de vaste kosten zo hoog zijn dat één aanbieder het goedkoopst is, zoals bij een leidingnet."],
+        ["Overheidsmonopolie", "Monopolie dat ontstaat doordat een wet of overheidsmaatregel maar één aanbieder toelaat."],
         ["Prijsafzetlijn", "Lijn die laat zien hoeveel de aanbieder bij elke prijs verkoopt. Bij een monopolie de collectieve vraaglijn. Ook de GO-lijn."],
         ["MO bij een monopolie", "De extra opbrengst van één extra product; lager dan de prijs, omdat de prijs voor alle producten omlaag moet."],
         ["Maximale winst", "De winst is het hoogst bij de afzet waar MO = MK."],
         ["Maximale omzet", "De omzet is het hoogst bij de afzet waar MO = 0."],
-        ["Prijszetter", "Aanbieder die zelf zijn prijs kiest (en daarmee ook zijn afzet)."]
+        ["Prijszetter", "Aanbieder die zelf zijn prijs kiest (en daarmee ook zijn afzet)."],
+        ["Feitelijk monopolie", "Monopolie dat ontstaat doordat één bedrijf alle concurrenten uit de markt heeft gewerkt, bijvoorbeeld met een octrooi of technologische voorsprong."]
       ],
       vragen: [
         { q: "De prijsafzetlijn van een monopolist is p = −q + 100. Wat is de MO-lijn?", a: ["MO = −2q + 100", "MO = −q + 50", "MO = −q + 100", "MO = −2q + 200"], u: "De MO-lijn begint op hetzelfde punt en daalt twee keer zo steil: MO = −2q + 100." },
@@ -88,7 +91,10 @@ THEMAS.push({
         { fig: "mono", q: "Bij welke afzet is de omzet maximaal?", a: ["50", "40", "80", "100"], u: "Maximale omzet bij MO = 0: het punt waar de MO-lijn de horizontale as snijdt, q = 50." },
         { fig: "mono_winst", q: "Wat stelt het gekleurde vlak voor?", a: ["De totale winst", "De totale opbrengst", "De totale kosten", "Het consumentensurplus"], u: "Het vlak ligt tussen de prijs (€ 60) en de GTK (€ 45) en loopt tot de afzet (40): winst per product × afzet = totale winst." },
         { fig: "mono_winst", q: "Hoe groot is de totale winst?", a: ["€ 600", "€ 1.600", "€ 2.400", "€ 1.800"], u: "(prijs − GTK) × afzet = (60 − 45) × 40 = € 600." },
-        { fig: "mono_winst", q: "Hoe groot zijn de totale kosten bij q = 40?", a: ["€ 1.800", "€ 800", "€ 2.400", "€ 45"], u: "TK = GTK × q = 45 × 40 = € 1.800." }
+        { fig: "mono_winst", q: "Hoe groot zijn de totale kosten bij q = 40?", a: ["€ 1.800", "€ 800", "€ 2.400", "€ 45"], u: "TK = GTK × q = 45 × 40 = € 1.800." },
+        { q: "In een land mag volgens de wet maar één bedrijf drinkwater leveren. Wat voor monopolie is dit?", a: ["Een overheidsmonopolie", "Een feitelijk monopolie", "Een duopolie", "Een kartel"], u: "De enige aanbieder is er door een wet of overheidsmaatregel: een overheidsmonopolie." },
+        { q: "Een farmaceut is de enige aanbieder van een medicijn waarop hij een octrooi heeft. Wat voor monopolie is dit?", a: ["Een feitelijk monopolie", "Een overheidsmonopolie", "Monopolistische concurrentie", "Een oligopolie"], u: "Het bedrijf is de enige aanbieder door zijn uitvinding en het octrooi daarop, niet doordat de overheid de markt aan één bedrijf heeft toegewezen." },
+        { q: "Wat is een mogelijk voordeel van een monopolie voor de consument?", a: ["Door de grote schaal kan de monopolist goedkoper produceren", "Er is meer keuze", "Er is meer innovatie door de concurrentie", "De prijs is altijd lager dan bij volkomen concurrentie"], u: "Schaalvoordelen kunnen de kosten verlagen. De nadelen zijn een hogere prijs, minder keuze en minder innovatie." }
       ],
       open: { q: "Leg uit waarom een monopolie voor consumenten nadeliger is dan volkomen concurrentie, en noem één manier waarop de overheid kan ingrijpen.", a: "Een monopolist heeft geen concurrenten en kiest de afzet waarbij zijn winst maximaal is (MO = MK). De prijs ligt dan boven de kosten per product en de hoeveelheid is kleiner dan bij volkomen concurrentie. Consumenten betalen dus meer en kopen minder. De overheid kan ingrijpen met een maximumprijs, met toezicht door een toezichthouder (ACM) of door het bedrijf zelf in handen te houden." }
     },
@@ -99,10 +105,10 @@ THEMAS.push({
         "Het product kan homogeen zijn (benzine, staal) of heterogeen (auto's, telecom, supermarkten).",
         "De aanbieders zijn onderling afhankelijk: de winst van de één hangt af van de keuze van de ander. Ze gedragen zich dus strategisch. Hier komt de speltheorie van paragraaf 3.1 terug.",
         "Een prijsverlaging wordt meestal direct gevolgd door de concurrenten. Dan ontstaat een prijzenoorlog waarbij iedereen minder verdient: een gevangenendilemma.",
-        "Daarom zijn prijzen vaak star en concurreren oligopolisten liever met reclame, service, kwaliteit en spaaracties.",
+        "Daarom zijn prijzen vaak star (prijsstarheid). Oligopolisten concurreren liever met nieuwe producten (innovatie) en met merk, verpakking, kwaliteit en service (productdifferentiatie).",
         "Kartel: aanbieders maken afspraken over prijs, productie of verdeling van de markt. Samen gedragen ze zich dan als een monopolist. Kartels zijn verboden; de ACM controleert en kan hoge boetes geven.",
         "Een kartel is niet stabiel: elk lid verdient meer door stiekem onder de afgesproken prijs te gaan zitten.",
-        "Clementieregeling: het bedrijf dat een kartel als eerste meldt, krijgt geen of een lagere boete. Dat maakt het aantrekkelijk om het kartel te verraden."
+        "Vuistregel: er is een oligopolie als de vier grootste bedrijven samen meer dan 70% van de markt hebben. Een oligopolie met twee aanbieders heet een duopolie."
       ],
       fig: ["m_prijs"],
       begrippen: [
@@ -112,7 +118,7 @@ THEMAS.push({
         ["Prijsstarheid", "Prijzen veranderen weinig, omdat geen aanbieder een prijzenoorlog wil uitlokken."],
         ["Kartel", "Verboden afspraak tussen bedrijven om de concurrentie te beperken, bijvoorbeeld een prijsafspraak."],
         ["ACM", "Autoriteit Consument en Markt: de toezichthouder die in Nederland de concurrentie bewaakt."],
-        ["Clementieregeling", "Regeling waarbij een bedrijf dat een kartel meldt, geen of een lagere boete krijgt."],
+        ["Duopolie", "Oligopolie met twee aanbieders."],
         ["Niet-prijsconcurrentie", "Concurreren met reclame, service of kwaliteit in plaats van met de prijs."]
       ],
       vragen: [
@@ -121,12 +127,12 @@ THEMAS.push({
         { q: "Waarom zijn kartels verboden?", a: ["Consumenten betalen een hogere prijs doordat de concurrentie wordt uitgeschakeld", "Omdat de bedrijven er verlies door maken", "Omdat er dan te veel aanbieders komen", "Omdat de prijzen dan te laag worden"], u: "Een kartel gedraagt zich als een monopolist: hogere prijs, minder keuze. Dat gaat ten koste van de consument." },
         { q: "Welke organisatie controleert in Nederland of bedrijven verboden prijsafspraken maken?", a: ["De ACM", "De Nederlandsche Bank", "Het CBS", "De Belastingdienst"], u: "De Autoriteit Consument en Markt (ACM) houdt toezicht op de concurrentie en kan boetes opleggen." },
         { q: "Waarom concurreren oligopolisten vaak met reclame en service in plaats van met de prijs?", a: ["Een prijsverlaging wordt direct gevolgd, waardoor iedereen minder verdient", "Omdat reclame gratis is", "Omdat de overheid prijsverlagingen verbiedt", "Omdat consumenten niet op de prijs letten"], u: "Een lagere prijs lokt een prijzenoorlog uit. Reclame en service zijn minder makkelijk te kopiëren." },
-        { q: "Wat is het doel van de clementieregeling?", a: ["Kartelleden verleiden om het kartel te verraden", "Bedrijven helpen om een kartel op te richten", "Kleine bedrijven beschermen tegen grote", "Consumenten hun geld teruggeven"], u: "Wie het kartel als eerste meldt, ontloopt de boete. Daardoor vertrouwen kartelleden elkaar minder en vallen kartels sneller uit elkaar." },
+        { q: "Op een markt hebben de vier grootste aanbieders samen 85% van de omzet. Welke marktvorm is dit volgens de vuistregel?", a: ["Oligopolie", "Monopolie", "Monopolistische concurrentie", "Volkomen concurrentie"], u: "Vuistregel: hebben de vier grootste bedrijven samen meer dan 70% van de markt, dan is het een oligopolie." },
         { fig: "m_prijs", q: "Twee tankstations kiezen tegelijk hun prijs. Wat is het Nash-evenwicht?", a: ["Beide een lage prijs (30 ; 30)", "Beide een hoge prijs (50 ; 50)", "Tango laag, Vito hoog (60 ; 20)", "Tango hoog, Vito laag (20 ; 60)"], u: "Een lage prijs is voor beide dominant (60 is beter dan 50 en 30 is beter dan 20). Het evenwicht is dus laag-laag." },
         { fig: "m_prijs", q: "Tango en Vito spreken af om allebei een hoge prijs te vragen. Hoeveel extra winst maakt Tango door stiekem toch een lage prijs te vragen?", a: ["10 duizend euro", "30 duizend euro", "40 duizend euro", "60 duizend euro"], u: "Tango gaat van 50 (beide hoog) naar 60 (Tango laag, Vito hoog): 10 duizend euro extra. Daarom is een kartel niet stabiel." },
         { fig: "m_prijs", q: "Bij welke combinatie is de winst van de twee tankstations samen het hoogst?", a: ["Beide een hoge prijs", "Beide een lage prijs", "Tango laag en Vito hoog", "Tango hoog en Vito laag"], u: "Beide hoog: 50 + 50 = 100. De andere combinaties geven samen 80 of 60. Dat verklaart waarom bedrijven in de verleiding komen een kartel te vormen." }
       ],
-      open: { q: "Vier bouwbedrijven spreken in het geheim af wie welke opdracht krijgt en tegen welke prijs. Leg met speltheorie uit waarom zo'n kartel vaak uit elkaar valt.", a: "Voor de bedrijven samen is de afspraak het beste: hoge prijzen en hoge winst. Maar elk bedrijf afzonderlijk verdient nog meer door stiekem net onder de afgesproken prijs te bieden en zo extra opdrachten te krijgen. Afwijken is dus aantrekkelijk (gevangenendilemma). Omdat de afspraak verboden is, kan niemand hem afdwingen bij de rechter. De clementieregeling maakt verraden nog aantrekkelijker: wie het eerst meldt, krijgt geen boete." }
+      open: { q: "Vier bouwbedrijven spreken in het geheim af wie welke opdracht krijgt en tegen welke prijs. Leg met speltheorie uit waarom zo'n kartel vaak uit elkaar valt.", a: "Voor de bedrijven samen is de afspraak het beste: hoge prijzen en hoge winst. Maar elk bedrijf afzonderlijk verdient nog meer door stiekem net onder de afgesproken prijs te bieden en zo extra opdrachten te krijgen. Afwijken is dus aantrekkelijk (gevangenendilemma). Omdat de afspraak verboden is, kan niemand hem afdwingen bij de rechter: het blijft een niet-coöperatief spel." }
     },
     {
       titel: "Monopolistische concurrentie",
@@ -165,10 +171,12 @@ THEMAS.push({
         "Producentensurplus: het verschil tussen de prijs die producenten krijgen en het bedrag waarvoor ze minimaal willen leveren.",
         "Een monopolist vraagt een hogere prijs en verkoopt minder dan bij volkomen concurrentie. Daardoor is het consumentensurplus kleiner en is ook het totale surplus (de welvaart) lager.",
         "Prijsdiscriminatie: hetzelfde product aan verschillende groepen kopers verkopen tegen verschillende prijzen, zonder dat de kosten verschillen.",
-        "Het doel is het consumentensurplus afromen: wie veel wil betalen, betaalt veel; wie weinig wil betalen, koopt toch tegen een lagere prijs. De omzet en de winst van de aanbieder stijgen.",
-        "Voorwaarden: (1) de aanbieder is prijszetter, (2) er zijn groepen kopers met een verschillende betalingsbereidheid die je uit elkaar kunt houden, (3) doorverkopen is niet mogelijk.",
-        "Voorbeelden: studentenkorting, kinderkaartjes, dal- en spitstarief, vliegtickets die duurder worden naarmate de vertrekdatum nadert.",
-        "Geen prijsdiscriminatie: een prijsverschil dat komt door een verschil in kosten, zoals hogere bezorgkosten naar het buitenland."
+        "Een monopolist roomt consumentensurplus af: hij haalt een deel van het voordeel van de consument naar zich toe. Dat kan al met één hoge prijs voor iedereen (een uniforme prijs), en nog sterker met prijsdiscriminatie.",
+        "Bij prijsdiscriminatie betaalt wie veel wil betalen ook veel, en koopt wie weinig wil betalen toch tegen een lagere prijs. De omzet en de winst van de aanbieder stijgen.",
+        "Twee voorwaarden: (1) de deelmarkten zijn gescheiden (bijvoorbeeld door plaats, leeftijd, tijd of geslacht) en (2) klanten kunnen het product niet doorverkopen van de ene deelmarkt naar de andere.",
+        "Voorbeelden: studentenkorting, kinderkaartjes, 65-pluskorting, hetzelfde medicijn dat in het ene land duurder is dan in het andere.",
+        "Geen prijsdiscriminatie: een prijsverschil dat komt door een verschil in kosten, zoals hogere bezorgkosten naar het buitenland.",
+        "Let op het verschil met prijsdifferentiatie: daar is het product vergelijkbaar maar niet hetzelfde (andere plaats, tijd of uitvoering), zoals de eerste en tweede rang in het theater."
       ],
       fig: ["mono_surplus"],
       voorbeeld: {
@@ -188,19 +196,23 @@ THEMAS.push({
         ["Totale surplus", "Consumentensurplus en producentensurplus samen; een maat voor de welvaart op een markt."],
         ["Prijsdiscriminatie", "Hetzelfde product tegen verschillende prijzen verkopen aan verschillende groepen kopers, zonder kostenverschil."],
         ["Surplus afromen", "Een deel van het consumentensurplus naar de aanbieder halen door kopers meer te laten betalen."],
-        ["Deelmarkt", "Groep kopers met een eigen betalingsbereidheid, bijvoorbeeld studenten of zakelijke reizigers."]
+        ["Deelmarkt", "Groep kopers met een eigen betalingsbereidheid, bijvoorbeeld studenten of zakelijke reizigers."],
+        ["Prijsdifferentiatie", "Een verschillende prijs vragen voor een vergelijkbaar maar verschillend product (andere plaats, tijd of uitvoering)."],
+        ["Uniforme prijs", "Eén prijs die voor alle kopers gelijk is."]
       ],
       vragen: [
         { q: "Wat is prijsdiscriminatie?", a: ["Hetzelfde product tegen verschillende prijzen verkopen aan verschillende groepen kopers", "Een hogere prijs vragen voor een beter product", "De prijs verlagen om concurrenten weg te jagen", "Prijsafspraken maken met concurrenten"], u: "Het gaat om hetzelfde product en dezelfde kosten, maar een andere prijs per groep kopers." },
         { q: "Welk voorbeeld is prijsdiscriminatie?", a: ["Een bioscoop geeft studenten korting op dezelfde film", "Een webwinkel rekent hogere bezorgkosten naar het buitenland", "Een bakker vraagt meer voor een taart dan voor een brood", "Een supermarkt verlaagt de prijs van brood dat bijna over de datum is"], u: "Studenten zien dezelfde film op dezelfde stoel voor minder geld. Bij de andere voorbeelden verschillen de kosten of het product." },
-        { q: "Waarom zet een vliegmaatschappij de naam van de passagier op het ticket?", a: ["Zo kunnen goedkope tickets niet worden doorverkocht", "Om de kosten per ticket te verlagen", "Omdat de overheid dat verplicht voor de belasting", "Om het product homogeen te maken"], u: "Prijsdiscriminatie werkt alleen als kopers van een goedkoop ticket het niet kunnen doorverkopen aan iemand die anders de hoge prijs had betaald." },
+        { q: "Een museum geeft studentenkorting, maar alleen als je bij de ingang je collegekaart laat zien. Waarom die controle?", a: ["Zo kan een goedkoop kaartje niet worden doorverkocht aan iemand die de volle prijs moet betalen", "Om de kosten per kaartje te verlagen", "Omdat studenten een ander product krijgen", "Om het product homogeen te maken"], u: "Prijsdiscriminatie werkt alleen als de deelmarkten gescheiden zijn en doorverkoop tussen de deelmarkten niet mogelijk is." },
         { q: "Wat wil een aanbieder bereiken met prijsdiscriminatie?", a: ["Consumentensurplus afromen en zo meer winst maken", "Het consumentensurplus vergroten", "De kosten per product verlagen", "Nieuwe aanbieders laten toetreden"], u: "Kopers met een hoge betalingsbereidheid betalen meer dan bij één prijs. Een deel van hun surplus gaat naar de aanbieder." },
         { q: "Wat is het consumentensurplus?", a: ["Het verschil tussen wat consumenten maximaal willen betalen en wat ze echt betalen", "De winst van de producent", "Het verschil tussen de prijs en de kosten per product", "De totale uitgaven van consumenten"], u: "Wie € 80 over heeft voor een product van € 60, heeft een surplus van € 20." },
         { q: "De vraaglijn is p = −q + 100. De prijs is € 60 en de afzet 40. Hoe groot is het consumentensurplus?", a: ["€ 800", "€ 1.600", "€ 2.400", "€ 400"], u: "Driehoek: ½ × basis × hoogte = ½ × 40 × (100 − 60) = € 800." },
-        { q: "Welke voorwaarde is NIET nodig voor prijsdiscriminatie?", a: ["Het product is homogeen", "De aanbieder kan zelf zijn prijs bepalen", "De groepen kopers zijn van elkaar te scheiden", "De groepen verschillen in betalingsbereidheid"], u: "De aanbieder moet prijszetter zijn en groepen met een verschillende betalingsbereidheid kunnen scheiden. Of het product homogeen is, doet er niet toe." },
+        { q: "Welke voorwaarde is NIET nodig voor prijsdiscriminatie?", a: ["Het product is homogeen", "De aanbieder kan zelf zijn prijs bepalen", "De groepen kopers zijn van elkaar te scheiden", "De groepen verschillen in betalingsbereidheid"], u: "De aanbieder moet marktmacht hebben en de deelmarkten moeten gescheiden zijn, zonder doorverkoop. Of het product homogeen is, doet er niet toe." },
         { q: "Wat gebeurt er met het consumentensurplus als een markt van volkomen concurrentie een monopolie wordt?", a: ["Het wordt kleiner, want de prijs stijgt en de afzet daalt", "Het wordt groter, want de monopolist maakt meer winst", "Het blijft gelijk", "Het wordt nul"], u: "Een hogere prijs en een kleinere hoeveelheid maken de driehoek onder de vraaglijn kleiner." },
         { fig: "mono_surplus", q: "Wat stelt de gekleurde driehoek voor?", a: ["Het consumentensurplus", "De winst van de monopolist", "De totale opbrengst", "De totale kosten"], u: "De driehoek ligt onder de prijsafzetlijn en boven de prijs (€ 60): het verschil tussen betalingsbereidheid en prijs." },
-        { fig: "mono_surplus", q: "Hoe groot is het gekleurde vlak?", a: ["€ 800", "€ 1.600", "€ 2.400", "€ 3.200"], u: "½ × 40 × (100 − 60) = € 800." }
+        { fig: "mono_surplus", q: "Hoe groot is het gekleurde vlak?", a: ["€ 800", "€ 1.600", "€ 2.400", "€ 3.200"], u: "½ × 40 × (100 − 60) = € 800." },
+        { q: "Een theater vraagt € 60 voor een stoel op de eerste rang en € 35 voor een stoel op de tweede rang. Hoe noem je dit?", a: ["Prijsdifferentiatie", "Prijsdiscriminatie", "Kartelvorming", "Een prijzenoorlog"], u: "Het product is vergelijkbaar maar niet hetzelfde: de plaats in de zaal verschilt. Dat is prijsdifferentiatie. Bij prijsdiscriminatie is het product precies hetzelfde." },
+        { q: "Hoe kan een monopolist consumentensurplus afromen zonder prijsdiscriminatie?", a: ["Door één hoge prijs voor iedereen te vragen", "Door de prijs te verlagen tot de kostprijs", "Door meer te produceren dan er gevraagd wordt", "Door een kartel te vormen met zichzelf"], u: "Met een hoge uniforme prijs blijft er voor consumenten minder verschil over tussen hun betalingsbereidheid en de prijs." }
       ],
       open: { q: "Een pretpark vraagt € 45 voor een volwassene en € 30 voor een kind tot 12 jaar. Leg uit waarom dit prijsdiscriminatie is en waarom het pretpark hier meer aan verdient dan aan één prijs.", a: "Het is hetzelfde product (een dag in het park) met dezelfde kosten, maar de prijs verschilt per groep: prijsdiscriminatie. Gezinnen met kinderen hebben per kaartje een lagere betalingsbereidheid. Met één hoge prijs zouden veel gezinnen wegblijven; met één lage prijs betalen volwassenen minder dan ze over hebben. Met twee prijzen komen de gezinnen toch en betalen volwassenen de hoge prijs: het park roomt consumentensurplus af. De groepen zijn te scheiden (leeftijd) en een kinderkaartje is niet door te verkopen aan een volwassene." }
     }

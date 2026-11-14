@@ -46,9 +46,10 @@ THEMAS.push({
         "Totale opbrengst (omzet): TO = p × q. Bij volkomen concurrentie ligt p vast, dus de TO-lijn is een rechte lijn door de oorsprong.",
         "Gemiddelde opbrengst: GO = TO : q = p. Marginale opbrengst: MO = de extra opbrengst van één extra product = p. Dus p = GO = MO.",
         "Totale kosten: TK = TCK + TVK. Constante kosten (TCK) veranderen niet met de productie, zoals huur en afschrijving. Variabele kosten (TVK) wel, zoals grondstoffen.",
-        "Gemiddelde totale kosten: GTK = TK : q. Marginale kosten (MK) = de extra kosten van één extra product.",
-        "Totale winst: TW = TO − TK. Is TO kleiner dan TK, dan is er verlies.",
-        "Break-even: TO = TK, de winst is nul. Break-evenafzet = TCK : (p − GVK), als de variabele kosten per stuk (GVK) constant zijn.",
+        "Kostprijs: GTK = TK : q. Dat is ook GVK + GCK (variabele plus constante kosten per product). Marginale kosten (MK) = de extra kosten van één extra product.",
+        "Stijgen de variabele kosten evenredig met de afzet, dan zijn ze proportioneel variabel: de GVK zijn constant en de TK-lijn is een rechte lijn.",
+        "Totale winst: TW = TO − TK. Is TO kleiner dan TK, dan is er verlies. Gemiddelde winst (winst per product): GW = p − GTK.",
+        "Break-even: TO = TK, de winst is nul. Break-even afzet = TCK : (p − GVK), als de variabele kosten per stuk (GVK) constant zijn. Break-even omzet = prijs × break-even afzet.",
         "Break-even kun je ook per stuk bekijken: GO = GTK. De prijs is dan precies gelijk aan de kosten per product.",
         "In een tabel reken je de MK uit als het verschil in TK tussen twee opeenvolgende hoeveelheden.",
         "Maximale winst: zolang MO groter is dan MK levert een extra product winst op, dus uitbreiden tot MO = MK.",
@@ -73,9 +74,15 @@ THEMAS.push({
         ["TCK (totale constante kosten)", "Kosten die niet veranderen als de productie verandert, zoals huur."],
         ["TVK (totale variabele kosten)", "Kosten die meegroeien met de productie, zoals grondstoffen."],
         ["MK (marginale kosten)", "De extra kosten van één extra geproduceerd product."],
-        ["GTK (gemiddelde totale kosten)", "Kosten per product: TK : q."],
+        ["Kostprijs (GTK)", "De totale kosten per product: TK : q, of GVK + GCK."],
         ["Break-evenpunt", "Productie waarbij TO = TK: geen winst en geen verlies."],
-        ["Capaciteit", "De maximale hoeveelheid die een bedrijf kan produceren."]
+        ["Capaciteit", "De maximale hoeveelheid die een bedrijf kan produceren."],
+        ["GVK (gemiddelde variabele kosten)", "De variabele kosten per product: TVK : q."],
+        ["GCK (gemiddelde constante kosten)", "De constante kosten per product: TCK : q."],
+        ["Gemiddelde winst (GW)", "De winst per product: prijs − kostprijs (GTK), of TW : q. Ook: winstmarge."],
+        ["Break-even afzet", "De afzet (q) waarbij TO = TK."],
+        ["Break-even omzet", "De omzet (p × q) waarbij TO = TK."],
+        ["Proportioneel variabele kosten", "Variabele kosten die evenredig met de afzet stijgen; per product zijn ze constant."]
       ],
       vragen: [
         { q: "Een tulpenkweker verkoopt 2.000 bossen tegen de marktprijs van € 3. Hoe groot is de totale opbrengst?", a: ["€ 6.000", "€ 2.003", "€ 667", "€ 3.000"], u: "TO = p × q = 3 × 2.000 = € 6.000." },
@@ -95,7 +102,10 @@ THEMAS.push({
         { fig: "vc_tabel", q: "Hoe groot zijn de marginale kosten van het vijfde product?", a: ["€ 8", "€ 6", "€ 10", "€ 6,60"], u: "MK = verandering van TK = 33 − 25 = € 8. (€ 6,60 is de GTK bij q = 5.)" },
         { fig: "vc_tabel", q: "Bij welke productie is de winst maximaal?", a: ["4", "3", "5", "6"], u: "Het vierde product kost € 6 extra en levert € 7 op: doen. Het vijfde kost € 8 extra en levert € 7 op: niet doen. Maximale winst bij q = 4." },
         { fig: "vc_tabel", q: "Hoe groot is de maximale winst?", a: ["€ 3", "€ 2", "€ 7", "€ 28"], u: "Bij q = 4: TO = 28 en TK = 25. Winst = 28 − 25 = € 3." },
-        { fig: "vc_tabel", q: "Bij welke productie maakt dit bedrijf voor het eerst winst?", a: ["3", "1", "2", "4"], u: "Bij q = 2 is TO 14 en TK 15 (verlies van 1). Bij q = 3 is TO 21 en TK 19: winst van 2." }
+        { fig: "vc_tabel", q: "Bij welke productie maakt dit bedrijf voor het eerst winst?", a: ["3", "1", "2", "4"], u: "Bij q = 2 is TO 14 en TK 15 (verlies van 1). Bij q = 3 is TO 21 en TK 19: winst van 2." },
+        { q: "De break-even afzet is 500 stuks en de prijs is € 20. Hoe groot is de break-even omzet?", a: ["€ 10.000", "€ 500", "€ 4.000", "€ 6.000"], u: "Break-even omzet = prijs × break-even afzet = 20 × 500 = € 10.000." },
+        { q: "De prijs is € 20 en de kostprijs (GTK) is € 16. Hoe groot is de gemiddelde winst?", a: ["€ 4", "€ 36", "€ 16", "€ 1,25"], u: "Gemiddelde winst = prijs − kostprijs = 20 − 16 = € 4 per product." },
+        { q: "De GVK zijn € 12 en de GCK zijn € 4. Hoe groot is de kostprijs?", a: ["€ 16", "€ 8", "€ 12", "€ 48"], u: "Kostprijs (GTK) = GVK + GCK = 12 + 4 = € 16." }
       ],
       open: { q: "Een bedrijf op een markt met volkomen concurrentie maakt bij break-even geen winst. Leg uit waarom het bedrijf bij een lagere marktprijs meer moet verkopen om break-even te draaien.", a: "Bij een lagere prijs blijft er per product minder over om de constante kosten te dekken (p − GVK wordt kleiner). De constante kosten blijven gelijk, dus er zijn meer producten nodig om ze terug te verdienen. In de grafiek loopt de TO-lijn minder steil en snijdt hij de TK-lijn verder naar rechts." }
     },

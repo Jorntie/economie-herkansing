@@ -23,7 +23,7 @@
     });
     const yc = Y0 + 2 * H + 20;
     const regels = [m.eenheid, `In elke cel: eerst ${m.A}, dan ${m.B}.`];
-    return svg(340, yc + 16 * regels.length - 8, `Opbrengstenmatrix van ${m.A} en ${m.B}`, out + cap(yc, regels));
+    return svg(340, yc + 16 * regels.length - 8, `Pay-off matrix van ${m.A} en ${m.B}`, out + cap(yc, regels));
   }
 
   // ---------- grafiek met assen, raster en schaalverdeling ----------

@@ -49,10 +49,12 @@ THEMAS.push({
         "Gemiddelde totale kosten: GTK = TK : q. Marginale kosten (MK) = de extra kosten van één extra product.",
         "Totale winst: TW = TO − TK. Is TO kleiner dan TK, dan is er verlies.",
         "Break-even: TO = TK, de winst is nul. Break-evenafzet = TCK : (p − GVK), als de variabele kosten per stuk (GVK) constant zijn.",
+        "Break-even kun je ook per stuk bekijken: GO = GTK. De prijs is dan precies gelijk aan de kosten per product.",
+        "In een tabel reken je de MK uit als het verschil in TK tussen twee opeenvolgende hoeveelheden.",
         "Maximale winst: zolang MO groter is dan MK levert een extra product winst op, dus uitbreiden tot MO = MK.",
         "Zijn de MK constant en lager dan de prijs (rechte TK-lijn)? Dan loont elk extra product en produceert het bedrijf tot de capaciteitsgrens."
       ],
-      fig: ["vc_totaal"],
+      fig: ["vc_totaal", "vc_gtk", "vc_tabel"],
       voorbeeld: {
         titel: "Rekenvoorbeeld: een kaasboerderij",
         stappen: [
@@ -86,7 +88,14 @@ THEMAS.push({
         { fig: "vc_totaal", q: "Bij welke afzet is er break-even?", a: ["500", "200", "800", "1.000"], u: "Break-even ligt bij het snijpunt van de TO-lijn en de TK-lijn. Dat is bij q = 500 (beide € 10.000)." },
         { fig: "vc_totaal", q: "Hoe groot zijn de constante kosten?", a: ["€ 4.000", "€ 0", "€ 10.000", "€ 16.000"], u: "Bij q = 0 zijn er alleen constante kosten. De TK-lijn begint op de verticale as bij 4 (× € 1.000)." },
         { fig: "vc_totaal", q: "Hoe groot is de winst als het bedrijf op volle capaciteit produceert?", a: ["€ 4.000", "€ 20.000", "€ 16.000", "€ 10.000"], u: "Bij q = 1.000 is TO = € 20.000 en TK = € 16.000. De winst is het verschil: € 4.000." },
-        { fig: "vc_totaal", q: "Het bedrijf verkoopt 300 stuks. Wat is het resultaat?", a: ["Verlies, want de TK-lijn ligt daar boven de TO-lijn", "Winst, want de TO-lijn stijgt sneller", "Precies break-even", "Dat kun je niet aflezen"], u: "Links van het break-evenpunt (q = 500) zijn de kosten hoger dan de opbrengst: verlies." }
+        { fig: "vc_totaal", q: "Het bedrijf verkoopt 300 stuks. Wat is het resultaat?", a: ["Verlies, want de TK-lijn ligt daar boven de TO-lijn", "Winst, want de TO-lijn stijgt sneller", "Precies break-even", "Dat kun je niet aflezen"], u: "Links van het break-evenpunt (q = 500) zijn de kosten hoger dan de opbrengst: verlies." },
+        { fig: "vc_gtk", q: "Bij welke afzet is er break-even?", a: ["500", "200", "800", "1.000"], u: "Break-even is ook het punt waar GO = GTK. De GTK-lijn snijdt de GO-lijn (€ 20) bij q = 500." },
+        { fig: "vc_gtk", q: "Bij q = 1.000 zijn de GTK € 16. Hoe groot is de totale winst?", a: ["€ 4.000", "€ 4", "€ 16.000", "€ 20.000"], u: "Winst per stuk = GO − GTK = 20 − 16 = € 4. Totale winst = 4 × 1.000 = € 4.000." },
+        { fig: "vc_gtk", q: "Waarom daalt de GTK-lijn als de productie toeneemt?", a: ["De constante kosten worden over meer producten verdeeld", "De variabele kosten per stuk dalen", "De marktprijs daalt", "De totale kosten dalen"], u: "De constante kosten blijven gelijk. Per product worden ze kleiner naarmate er meer producten zijn." },
+        { fig: "vc_tabel", q: "Hoe groot zijn de marginale kosten van het vijfde product?", a: ["€ 8", "€ 6", "€ 10", "€ 6,60"], u: "MK = verandering van TK = 33 − 25 = € 8. (€ 6,60 is de GTK bij q = 5.)" },
+        { fig: "vc_tabel", q: "Bij welke productie is de winst maximaal?", a: ["4", "3", "5", "6"], u: "Het vierde product kost € 6 extra en levert € 7 op: doen. Het vijfde kost € 8 extra en levert € 7 op: niet doen. Maximale winst bij q = 4." },
+        { fig: "vc_tabel", q: "Hoe groot is de maximale winst?", a: ["€ 3", "€ 2", "€ 7", "€ 28"], u: "Bij q = 4: TO = 28 en TK = 25. Winst = 28 − 25 = € 3." },
+        { fig: "vc_tabel", q: "Bij welke productie maakt dit bedrijf voor het eerst winst?", a: ["3", "1", "2", "4"], u: "Bij q = 2 is TO 14 en TK 15 (verlies van 1). Bij q = 3 is TO 21 en TK 19: winst van 2." }
       ],
       open: { q: "Een bedrijf op een markt met volkomen concurrentie maakt bij break-even geen winst. Leg uit waarom het bedrijf bij een lagere marktprijs meer moet verkopen om break-even te draaien.", a: "Bij een lagere prijs blijft er per product minder over om de constante kosten te dekken (p − GVK wordt kleiner). De constante kosten blijven gelijk, dus er zijn meer producten nodig om ze terug te verdienen. In de grafiek loopt de TO-lijn minder steil en snijdt hij de TK-lijn verder naar rechts." }
     },

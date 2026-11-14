@@ -49,9 +49,10 @@ THEMAS.push({
         "Voorbeeld: p = −q + 100 geeft TO = −q² + 100q en MO = −2q + 100.",
         "Maximale winst: MO = MK. Reken daarmee de afzet uit en vul die in de prijsafzetlijn in voor de prijs. Lees de prijs dus nooit af op de MO-lijn.",
         "Maximale omzet: MO = 0.",
+        "In de grafiek is de winst een rechthoek: (prijs − GTK) × afzet. De hoogte is de winst per product, de breedte de afzet.",
         "Vergeleken met volkomen concurrentie: een hogere prijs en een kleinere hoeveelheid. Daarom houdt de overheid toezicht op monopolies of stelt ze een maximumprijs vast."
       ],
-      fig: ["mono"],
+      fig: ["mono", "mono_winst"],
       voorbeeld: {
         titel: "Rekenvoorbeeld: maximale winst van een monopolist",
         stappen: [
@@ -84,7 +85,10 @@ THEMAS.push({
         { q: "Waarom is de MO van een monopolist lager dan de prijs?", a: ["Om één product extra te verkopen moet de prijs van alle producten omlaag", "Omdat de kosten stijgen als hij meer produceert", "Omdat de overheid een deel van de opbrengst afroomt", "Omdat hij een hoeveelheidsaanpasser is"], u: "Het extra product levert de nieuwe prijs op, maar op alle andere producten verdient hij nu iets minder. Samen is dat minder dan de prijs." },
         { fig: "mono", q: "Bij welke afzet maakt deze monopolist maximale winst?", a: ["40", "50", "80", "100"], u: "Maximale winst bij het snijpunt van MO en MK. Dat ligt bij q = 40." },
         { fig: "mono", q: "Welke prijs hoort bij maximale winst?", a: ["€ 60", "€ 20", "€ 40", "€ 80"], u: "Ga bij q = 40 omhoog tot de prijsafzetlijn (GO) en lees daar de prijs af: € 60. Bij € 20 lees je de MK af, niet de prijs." },
-        { fig: "mono", q: "Bij welke afzet is de omzet maximaal?", a: ["50", "40", "80", "100"], u: "Maximale omzet bij MO = 0: het punt waar de MO-lijn de horizontale as snijdt, q = 50." }
+        { fig: "mono", q: "Bij welke afzet is de omzet maximaal?", a: ["50", "40", "80", "100"], u: "Maximale omzet bij MO = 0: het punt waar de MO-lijn de horizontale as snijdt, q = 50." },
+        { fig: "mono_winst", q: "Wat stelt het gekleurde vlak voor?", a: ["De totale winst", "De totale opbrengst", "De totale kosten", "Het consumentensurplus"], u: "Het vlak ligt tussen de prijs (€ 60) en de GTK (€ 45) en loopt tot de afzet (40): winst per product × afzet = totale winst." },
+        { fig: "mono_winst", q: "Hoe groot is de totale winst?", a: ["€ 600", "€ 1.600", "€ 2.400", "€ 1.800"], u: "(prijs − GTK) × afzet = (60 − 45) × 40 = € 600." },
+        { fig: "mono_winst", q: "Hoe groot zijn de totale kosten bij q = 40?", a: ["€ 1.800", "€ 800", "€ 2.400", "€ 45"], u: "TK = GTK × q = 45 × 40 = € 1.800." }
       ],
       open: { q: "Leg uit waarom een monopolie voor consumenten nadeliger is dan volkomen concurrentie, en noem één manier waarop de overheid kan ingrijpen.", a: "Een monopolist heeft geen concurrenten en kiest de afzet waarbij zijn winst maximaal is (MO = MK). De prijs ligt dan boven de kosten per product en de hoeveelheid is kleiner dan bij volkomen concurrentie. Consumenten betalen dus meer en kopen minder. De overheid kan ingrijpen met een maximumprijs, met toezicht door een toezichthouder (ACM) of door het bedrijf zelf in handen te houden." }
     },
@@ -153,6 +157,52 @@ THEMAS.push({
         { q: "Wat is het belangrijkste verschil tussen monopolistische concurrentie en oligopolie?", a: ["Het aantal aanbieders: veel tegenover weinig", "Het product: homogeen tegenover heterogeen", "Bij oligopolie is toetreden makkelijker", "Bij monopolistische concurrentie is de aanbieder prijsnemer"], u: "Bij monopolistische concurrentie zijn er veel (kleine) aanbieders, bij oligopolie een paar grote. Daardoor is bij oligopolie de onderlinge afhankelijkheid veel sterker." }
       ],
       open: { q: "Een bakker verkoopt hetzelfde soort brood als de supermarkt, maar vraagt er meer voor. Leg uit hoe de bakker dat kan volhouden en waarom hij zijn prijs toch niet onbeperkt kan verhogen.", a: "De bakker onderscheidt zich (productdifferentiatie): vers gebakken, betere smaak, persoonlijke service, dichtbij. Klanten zien zijn brood daardoor als een ander product en zijn bereid meer te betalen. Dat geeft hem een beetje marktmacht. Maar brood van de supermarkt en van andere bakkers is een substituut: wordt het prijsverschil te groot, dan stappen klanten over." }
+    },
+    {
+      titel: "Prijsdiscriminatie en surplus",
+      kern: [
+        "Consumentensurplus: het verschil tussen wat consumenten maximaal willen betalen (hun betalingsbereidheid) en de prijs die ze echt betalen. In de grafiek is dat de driehoek onder de vraaglijn en boven de prijs.",
+        "Producentensurplus: het verschil tussen de prijs die producenten krijgen en het bedrag waarvoor ze minimaal willen leveren.",
+        "Een monopolist vraagt een hogere prijs en verkoopt minder dan bij volkomen concurrentie. Daardoor is het consumentensurplus kleiner en is ook het totale surplus (de welvaart) lager.",
+        "Prijsdiscriminatie: hetzelfde product aan verschillende groepen kopers verkopen tegen verschillende prijzen, zonder dat de kosten verschillen.",
+        "Het doel is het consumentensurplus afromen: wie veel wil betalen, betaalt veel; wie weinig wil betalen, koopt toch tegen een lagere prijs. De omzet en de winst van de aanbieder stijgen.",
+        "Voorwaarden: (1) de aanbieder is prijszetter, (2) er zijn groepen kopers met een verschillende betalingsbereidheid die je uit elkaar kunt houden, (3) doorverkopen is niet mogelijk.",
+        "Voorbeelden: studentenkorting, kinderkaartjes, dal- en spitstarief, vliegtickets die duurder worden naarmate de vertrekdatum nadert.",
+        "Geen prijsdiscriminatie: een prijsverschil dat komt door een verschil in kosten, zoals hogere bezorgkosten naar het buitenland."
+      ],
+      fig: ["mono_surplus"],
+      voorbeeld: {
+        titel: "Rekenvoorbeeld: consumentensurplus bij monopolie en bij volkomen concurrentie",
+        stappen: [
+          "Gegeven: vraaglijn p = −q + 100 en MK = 20. De hoogste prijs die iemand wil betalen is € 100 (bij q = 0).",
+          "Monopolie: p = € 60 en q = 40. Consumentensurplus = ½ × 40 × (100 − 60) = € 800.",
+          "Volkomen concurrentie: de prijs zakt naar de kosten, p = € 20. Dan is q = 80.",
+          "Consumentensurplus = ½ × 80 × (100 − 20) = € 3.200.",
+          "Door het monopolie is het consumentensurplus dus € 2.400 lager."
+        ]
+      },
+      begrippen: [
+        ["Consumentensurplus", "Het verschil tussen de betalingsbereidheid van consumenten en de prijs die ze betalen."],
+        ["Betalingsbereidheid", "Het bedrag dat een consument maximaal voor een product wil betalen."],
+        ["Producentensurplus", "Het verschil tussen de prijs en het bedrag waarvoor producenten minimaal willen leveren."],
+        ["Totale surplus", "Consumentensurplus en producentensurplus samen; een maat voor de welvaart op een markt."],
+        ["Prijsdiscriminatie", "Hetzelfde product tegen verschillende prijzen verkopen aan verschillende groepen kopers, zonder kostenverschil."],
+        ["Surplus afromen", "Een deel van het consumentensurplus naar de aanbieder halen door kopers meer te laten betalen."],
+        ["Deelmarkt", "Groep kopers met een eigen betalingsbereidheid, bijvoorbeeld studenten of zakelijke reizigers."]
+      ],
+      vragen: [
+        { q: "Wat is prijsdiscriminatie?", a: ["Hetzelfde product tegen verschillende prijzen verkopen aan verschillende groepen kopers", "Een hogere prijs vragen voor een beter product", "De prijs verlagen om concurrenten weg te jagen", "Prijsafspraken maken met concurrenten"], u: "Het gaat om hetzelfde product en dezelfde kosten, maar een andere prijs per groep kopers." },
+        { q: "Welk voorbeeld is prijsdiscriminatie?", a: ["Een bioscoop geeft studenten korting op dezelfde film", "Een webwinkel rekent hogere bezorgkosten naar het buitenland", "Een bakker vraagt meer voor een taart dan voor een brood", "Een supermarkt verlaagt de prijs van brood dat bijna over de datum is"], u: "Studenten zien dezelfde film op dezelfde stoel voor minder geld. Bij de andere voorbeelden verschillen de kosten of het product." },
+        { q: "Waarom zet een vliegmaatschappij de naam van de passagier op het ticket?", a: ["Zo kunnen goedkope tickets niet worden doorverkocht", "Om de kosten per ticket te verlagen", "Omdat de overheid dat verplicht voor de belasting", "Om het product homogeen te maken"], u: "Prijsdiscriminatie werkt alleen als kopers van een goedkoop ticket het niet kunnen doorverkopen aan iemand die anders de hoge prijs had betaald." },
+        { q: "Wat wil een aanbieder bereiken met prijsdiscriminatie?", a: ["Consumentensurplus afromen en zo meer winst maken", "Het consumentensurplus vergroten", "De kosten per product verlagen", "Nieuwe aanbieders laten toetreden"], u: "Kopers met een hoge betalingsbereidheid betalen meer dan bij één prijs. Een deel van hun surplus gaat naar de aanbieder." },
+        { q: "Wat is het consumentensurplus?", a: ["Het verschil tussen wat consumenten maximaal willen betalen en wat ze echt betalen", "De winst van de producent", "Het verschil tussen de prijs en de kosten per product", "De totale uitgaven van consumenten"], u: "Wie € 80 over heeft voor een product van € 60, heeft een surplus van € 20." },
+        { q: "De vraaglijn is p = −q + 100. De prijs is € 60 en de afzet 40. Hoe groot is het consumentensurplus?", a: ["€ 800", "€ 1.600", "€ 2.400", "€ 400"], u: "Driehoek: ½ × basis × hoogte = ½ × 40 × (100 − 60) = € 800." },
+        { q: "Welke voorwaarde is NIET nodig voor prijsdiscriminatie?", a: ["Het product is homogeen", "De aanbieder kan zelf zijn prijs bepalen", "De groepen kopers zijn van elkaar te scheiden", "De groepen verschillen in betalingsbereidheid"], u: "De aanbieder moet prijszetter zijn en groepen met een verschillende betalingsbereidheid kunnen scheiden. Of het product homogeen is, doet er niet toe." },
+        { q: "Wat gebeurt er met het consumentensurplus als een markt van volkomen concurrentie een monopolie wordt?", a: ["Het wordt kleiner, want de prijs stijgt en de afzet daalt", "Het wordt groter, want de monopolist maakt meer winst", "Het blijft gelijk", "Het wordt nul"], u: "Een hogere prijs en een kleinere hoeveelheid maken de driehoek onder de vraaglijn kleiner." },
+        { fig: "mono_surplus", q: "Wat stelt de gekleurde driehoek voor?", a: ["Het consumentensurplus", "De winst van de monopolist", "De totale opbrengst", "De totale kosten"], u: "De driehoek ligt onder de prijsafzetlijn en boven de prijs (€ 60): het verschil tussen betalingsbereidheid en prijs." },
+        { fig: "mono_surplus", q: "Hoe groot is het gekleurde vlak?", a: ["€ 800", "€ 1.600", "€ 2.400", "€ 3.200"], u: "½ × 40 × (100 − 60) = € 800." }
+      ],
+      open: { q: "Een pretpark vraagt € 45 voor een volwassene en € 30 voor een kind tot 12 jaar. Leg uit waarom dit prijsdiscriminatie is en waarom het pretpark hier meer aan verdient dan aan één prijs.", a: "Het is hetzelfde product (een dag in het park) met dezelfde kosten, maar de prijs verschilt per groep: prijsdiscriminatie. Gezinnen met kinderen hebben per kaartje een lagere betalingsbereidheid. Met één hoge prijs zouden veel gezinnen wegblijven; met één lage prijs betalen volwassenen minder dan ze over hebben. Met twee prijzen komen de gezinnen toch en betalen volwassenen de hoge prijs: het park roomt consumentensurplus af. De groepen zijn te scheiden (leeftijd) en een kinderkaartje is niet door te verkopen aan een volwassene." }
     }
   ]
 });

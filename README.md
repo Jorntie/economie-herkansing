@@ -1,6 +1,6 @@
 # Economie herkansing
 
-Oefen-app voor de economietoets over drie paragrafen:
+Oefen-app voor de economietoets (havo, methode Cumulus) over drie paragrafen:
 
 | Paragraaf | Titel |
 |---|---|
@@ -13,9 +13,9 @@ flashcards, een meerkeuzequiz met uitleg (ook vragen bij een matrix of grafiek) 
 met modelantwoord. Daarnaast een oefentoets van 20 vragen door alle paragrafen heen en een knop om
 je fouten te herhalen.
 
-De samenvattingen en vragen zijn zelf geschreven op basis van de gangbare examenstof, niet op basis
-van het boek (de methode was niet bekend). De indeling en de voorbeelden kunnen dus afwijken:
-check altijd het boek en je aantekeningen.
+De samenvattingen en vragen zijn zelf geschreven. De onderwerpen volgen de inhoudsopgave van de
+werkboeken Economie havo van Cumulus; de theorie zelf is er niet naast gelegd. Check bij twijfel
+altijd het boek en je aantekeningen.
 
 ## Gebruiken
 

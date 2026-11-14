@@ -63,7 +63,7 @@ THEMAS.push({
       fig: ["m_reclame"],
       begrippen: [
         ["Nash-evenwicht", "Combinatie van keuzes waarbij geen speler beter wordt door als enige een andere keuze te maken."],
-        ["Gevangenendilemma", "Spel waarin beide spelers hun dominante strategie kiezen en daardoor allebei slechter af zijn dan bij samenwerking."],
+        ["Gevangenendilemma (prisoner's dilemma)", "Spel waarin beide spelers hun dominante strategie kiezen en daardoor allebei slechter af zijn dan bij samenwerking."],
         ["Eigenbelang", "Wat voor één speler zelf het beste is."],
         ["Gezamenlijk (collectief) belang", "Wat voor de spelers samen het beste is."],
         ["Samenwerken (coöperatief gedrag)", "Kiezen wat voor de groep het beste is, bijvoorbeeld je aan een afspraak houden."],

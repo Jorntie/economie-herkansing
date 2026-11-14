@@ -40,6 +40,12 @@
       `<text transform="translate(11,86) rotate(-90)" text-anchor="middle" class="k">${yt} →</text>`;
   }
 
+  const monoBasis = () =>
+    grafiek("afzet (q)", "euro's per stuk", ["20", "40", "60", "80", "100"], ["20", "40", "60", "80", "100"]) +
+    lijn(45, 12, 325, 160, "curve") + lijn(45, 12, 185, 160, "curve2") + lijn(45, 130.4, 325, 130.4, "curve3") +
+    t(128, 44, "GO = prijsafzetlijn", "start", "b pa") + t(110, 96, "MO", "end", "b pr") + t(322, 124, "MK", "end", "b");
+  const monoHulp = () => lijn(157, 160, 157, 71.2, "stip") + lijn(45, 71.2, 157, 71.2, "stip") + stip(157, 130.4) + stip(157, 71.2);
+
   const F = {
     m_reclame: () => matrix({
       A: "Frisco", B: "Kola", sA: ["geen reclame", "wel reclame"], sB: ["geen reclame", "wel reclame"],
@@ -84,15 +90,49 @@
       return svg(340, 206 + 16 * regels.length, "Totale opbrengst en totale kosten", body + cap(212, regels));
     },
 
+    // GO = 20, GTK = 12 + 4.000/q (zelfde bedrijf als vc_totaal)
+    vc_gtk(quiz) {
+      let d = "";
+      for (let q = 110; q <= 1000; q += 10) d += `${q === 110 ? "M" : "L"}${(45 + q * 0.28).toFixed(1)} ${(160 - (12 + 4000 / q) * 2.96).toFixed(1)}`;
+      const body =
+        grafiek("productie en afzet (q)", "euro's per stuk", ["200", "400", "600", "800", "1.000"], ["10", "20", "30", "40", "50"]) +
+        lijn(45, 100.8, 325, 100.8, "curve") + `<path d="${d}" class="curve2"/>` +
+        t(322, 94, "GO = prijs", "end", "b pa") + t(112, 40, "GTK", "start", "b pr") +
+        (quiz ? "" : lijn(185, 160, 185, 100.8, "stip") + stip(185, 100.8));
+      const regels = quiz ? [] : ["Break-even bij q = 500: GO = GTK = € 20.", "Rechts daarvan is GO hoger dan GTK: winst op elk product."];
+      return svg(340, 200 + 16 * regels.length, "Gemiddelde opbrengst en gemiddelde totale kosten", body + cap(212, regels));
+    },
+
+    // marktprijs 7; de leerling leidt MK en winst zelf af (in de samenvatting staan ze erbij)
+    vc_tabel(quiz) {
+      const TK = [8, 12, 15, 19, 25, 33, 43];
+      const rij = TK.map((tk, q) => `<tr><td>${q}</td><td>${7 * q}</td><td>${tk}</td>` +
+        (quiz ? "" : `<td>${q ? tk - TK[q - 1] : "–"}</td><td>${7 * q - tk}</td>`) + `</tr>`).join("");
+      return `<table class="tabel getal"><caption>Marktprijs: € 7 per stuk. Bedragen in euro's.</caption>
+        <tr><th>q</th><th>TO</th><th>TK</th>${quiz ? "" : "<th>MK</th><th>winst</th>"}</tr>${rij}</table>`;
+    },
+
     // p = -q + 100, MO = -2q + 100, MK = 20
     mono(quiz) {
-      const body =
-        grafiek("afzet (q)", "euro's per stuk", ["20", "40", "60", "80", "100"], ["20", "40", "60", "80", "100"]) +
-        lijn(45, 12, 325, 160, "curve") + lijn(45, 12, 185, 160, "curve2") + lijn(45, 130.4, 325, 130.4, "curve3") +
-        t(128, 44, "GO = prijsafzetlijn", "start", "b pa") + t(110, 96, "MO", "end", "b pr") + t(322, 124, "MK", "end", "b") +
-        (quiz ? "" : lijn(157, 160, 157, 71.2, "stip") + lijn(45, 71.2, 157, 71.2, "stip") + stip(157, 130.4) + stip(157, 71.2));
       const regels = quiz ? [] : ["Maximale winst: MO = MK bij q = 40.", "De prijs lees je af op de prijsafzetlijn: € 60."];
-      return svg(340, 200 + 16 * regels.length, "Monopolie: prijsafzetlijn, MO en MK", body + cap(212, regels));
+      return svg(340, 200 + 16 * regels.length, "Monopolie: prijsafzetlijn, MO en MK", monoBasis() + (quiz ? "" : monoHulp()) + cap(212, regels));
+    },
+
+    // zelfde monopolist met GTK = 20 + 1.000/q; de winst is een rechthoek
+    mono_winst(quiz) {
+      let d = "";
+      for (let q = 13; q <= 100; q += 1) d += `${q === 13 ? "M" : "L"}${(45 + q * 2.8).toFixed(1)} ${(160 - (20 + 1000 / q) * 1.48).toFixed(1)}`;
+      const regels = ["Bij q = 40 zijn de GTK € 45."].concat(quiz ? [] : ["Het gekleurde vlak is de winst: (60 − 45) × 40 = € 600."]);
+      return svg(340, 200 + 16 * regels.length, "Monopolie: winst als vlak tussen prijs en GTK",
+        `<rect x="45" y="71.2" width="112" height="22.2" class="vlak"/>` + monoBasis() + monoHulp() +
+        `<path d="${d}" class="curve4"/>` + t(94, 24, "GTK", "start", "b pb") + stip(157, 93.4) + cap(212, regels));
+    },
+
+    // consumentensurplus: driehoek onder de prijsafzetlijn en boven de prijs
+    mono_surplus(quiz) {
+      const regels = quiz ? [] : ["Consumentensurplus = ½ × 40 × (100 − 60) = € 800."];
+      return svg(340, 200 + 16 * regels.length, "Monopolie: consumentensurplus",
+        `<polygon points="45,12 45,71.2 157,71.2" class="vlak"/>` + monoBasis() + monoHulp() + cap(212, regels));
     },
 
     marktvormen: () => `<table class="tabel">
